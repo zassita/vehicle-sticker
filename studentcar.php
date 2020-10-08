@@ -1,7 +1,7 @@
  <?php
 //insertactivity.php
  session_start();
-include('checksessionstudent.php');
+// include('checksessionstudent.php');
 
 ?>
 
@@ -158,69 +158,68 @@ form{
 </div>
 
 <h2>Car Registration Form</h2><br>
-<form method="POST" action="listingcar.php">
-      <table width="500" border="1">
-          <tr>
-     <td>NAME: <input name="name" type="text" class="form-control"></td>
-</tr>
-<tr>
-    <td>PHONE.NO: <input type="text" name="phoneno" class="form-control"></td>
-</tr>
-<tr>
-     <td>GENDER: <input type="radio" id="male" name="gender" value="male" class="form-control">
-     <label for="male">Male</label>
-     <input type="radio" id="female" name="gender" value="female" class="form-control">
-     <label for="female">Female</label></td>
-</tr>
-<tr>
-     <td>PROGRAMME: <input type="text" name="programme" class="form-control"></td>
-</tr>
-<tr>
-     <td>FACULTY: <input type="radio" id="asasi" name="faculty" value="asasi" class="form-control">
-     <label for="asasi">Asasi</label>
-     <input type="radio" id="fpm" name="faculty" value="fpm"  class="form-control">
-     <label for="fpm">FPM</label>
-     <input type="radio" id="fppi" name="faculty" value="fppi"  class="form-control">
-     <label for="fppi">FPPI</label>
-     <input type="radio" id="fstm" name="faculty" value="fstm"  class="form-control">
-     <label for="fstm">FSTM</label>
-     <input type="radio" id="fsu" name="faculty" value="fsu"  class="form-control">
-     <label for="fsu">FSU</label></td>
-</tr>
-<tr>
-     <td>MATRIC.NO: <input type="text" name="matricno" class="form-control"></td>
-</tr>
-<tr>
-     <td>ADDRESS: <input type="text" name="address" class="form-control"></td>
-</tr>
-<tr>
-     <td>DRIVING LICENSE CLASS:<input type="text" name="licenseclass" class="form-control"></td>
-</tr>
-<tr>
-     <td>ROAD TAX END DATE:<input type="text" name="roadtax" class="form-control"></td>
-</tr>
-<tr>
-     <td>CAR BRAND: <input type="text" name="carbrand" class="form-control"></td>
-</tr>
-<tr>
-     <td>COLOR: <input type="text" name="color" class="form-control"></td>
-</tr>
-<tr>
-     <td>CYLINDER POWER: <input type="text" name="cylinderpower" class="form-control"></td>
-</tr>
-<tr>
-     <td>VEHICLE REGISTRATION NO.: <input type="text" name="registration" class="form-control"></td>
-</tr>
-<tr>
-     <td>DRIVER'S LICENSE EXPIRATION DATE: <input type="text" name="expirationdate" class="form-control"></td>
-</tr>
-<tr>
-    <td>UPLOAD LICENSE FILES:   <input type="file" name="fileToUpload" id="fileToUpload">
-</td>
-</tr>
+<form method="POST" action="listingcar.php" enctype="multipart/form-data">
+  <table width="500" border="1">
+    <tr>
+       <td>NAME: <input name="name" type="text" class="form-control"></td>
+    </tr>
+    <tr>
+       <td>PHONE.NO: <input type="text" name="phoneno" class="form-control"></td>
+    </tr>
+    <tr>
+       <td>GENDER: <input type="radio" id="male" name="gender" value="male" class="form-control">
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="female" class="form-control">
+       <label for="female">Female</label></td>
+    </tr>
+    <tr>
+       <td>PROGRAMME: <input type="text" name="programme" class="form-control"></td>
+    </tr>
+    <tr>
+       <td>FACULTY: <input type="radio" id="asasi" name="faculty" value="asasi" class="form-control">
+       <label for="asasi">Asasi</label>
+       <input type="radio" id="fpm" name="faculty" value="fpm"  class="form-control">
+       <label for="fpm">FPM</label>
+       <input type="radio" id="fppi" name="faculty" value="fppi"  class="form-control">
+       <label for="fppi">FPPI</label>
+       <input type="radio" id="fstm" name="faculty" value="fstm"  class="form-control">
+       <label for="fstm">FSTM</label>
+       <input type="radio" id="fsu" name="faculty" value="fsu"  class="form-control">
+       <label for="fsu">FSU</label></td>
+    </tr>
+    <tr>
+        <td>MATRIC.NO: <input type="text" name="matricno" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>ADDRESS: <input type="text" name="address" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>DRIVING LICENSE CLASS:<input type="text" name="licenseclass" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>ROAD TAX END DATE:<input type="text" name="roadtax" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>CAR BRAND: <input type="text" name="carbrand" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>COLOR: <input type="text" name="color" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>CYLINDER POWER: <input type="text" name="cylinderpower" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>VEHICLE REGISTRATION NO.: <input type="text" name="registration" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>DRIVER'S LICENSE EXPIRATION DATE: <input type="text" name="expirationdate" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>DRIVER LICENSE: <input type="file" name="fileToUpload"></td>
+    </tr>
 </table>
 <td><td>
-     <td><button name="save" type="submit">Save Record</button></td>
+     <td><input name="save" type="submit" value="Save Record" ></td>
       <td><a href="homestudent.php" >Cancel</a></td>  
  </td>
 </td>
