@@ -2,7 +2,7 @@
 session_start();
 include "checksession.php";
 ?>
-
+<!-- test merge -->
 <!DOCTYPE HTML>
 <html>
 <head><title>VEHICLE STICKER APPLICATION</title>
