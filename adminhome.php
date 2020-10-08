@@ -8,6 +8,7 @@ include "checksession.php";
 <head><title>VEHICLE STICKER APPLICATION</title>
 <img src="logo_kuis.png" alt="logokuis" width="1000" height="110" align="center">
 
+
 <style>
 	{
   box-sizing: border-box;
